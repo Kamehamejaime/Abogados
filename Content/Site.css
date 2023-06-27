@@ -1,0 +1,358 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 0;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.body-content h1 {
+    color: #00365e;
+    margin-bottom: 50px;
+}
+
+/***************navBar****************/
+.navbar {
+    display: flex;
+    background-color: #00365e;
+    position:sticky;
+    z-index:3;
+    top:0;
+}
+
+.container-nav {
+    display: contents;
+}
+
+
+
+.nav-link {
+    color: white;
+}
+
+    .nav-link:hover {
+        color: cyan;
+        border-color: #00365e;
+    }
+
+.navbar ul {
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-nav li {
+    font-size: larger;
+    letter-spacing: 2.5px;
+}
+
+.logoS {
+    margin-left: 8vh;
+}
+
+
+.collapse ul li {
+    float: right;
+}
+
+.collapse {
+    display: flex;
+    flex-direction: column !important;
+    align-items: start;
+}
+
+
+/************Footer*******************/
+
+.d-flex {
+    justify-items: center;
+}
+
+.py-3 {
+    color: black;
+}
+
+
+
+footer p {
+    display: flex;
+    justify-items: center;
+}
+
+footer .my-4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.d-flex {
+    justify-content: center !important;
+}
+
+.container d-flex {
+    background-color: #00365e;
+    margin: 0;
+}
+/*************************************/
+
+
+/*************Carusel****************/
+
+.carousel-inner {
+    margin-bottom: 80px
+}
+
+#myCarousel {
+    width: auto;
+    margin-right: auto;
+}
+
+    #myCarousel img {
+        height: 100%;
+        width: auto;
+    }
+
+
+/*********************************/
+
+.asesoria-title {
+    color: #00365e;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 2560px;
+    align-content: center;
+}
+
+.card-body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 2560px
+}
+
+/******Vista de apartado Clientes*******/
+.Client-title {
+    color: #00365e;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+/******footer fixed*******/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: #00365e;
+    color: white;
+    height: 30em;
+    margin-top: auto;
+}
+
+
+/******place holder******/
+
+.place-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .place-holder .card {
+        margin: 30px;
+        padding: 5px;
+    }
+
+
+
+/************FORMS CREATE***************/
+
+
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+    .title::before, .title::after {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        left: 0px;
+        background-color: royalblue;
+    }
+
+    .title::before {
+        width: 18px;
+        height: 18px;
+        background-color: royalblue;
+    }
+
+    .title::after {
+        width: 18px;
+        height: 18px;
+        animation: pulse 1s linear infinite;
+    }
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+/***************************************/
+.form-horizontal {
+    margin-bottom: 40px;
+    display:block;
+    width: 40vh;
+}
+
+.dl-horizontal {
+    margin-bottom: 40px;
+    width:400px;
+}
+
+.form-group .control-label {
+    font-size: larger;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
+.form-group .form-control {
+    max-width: 100vh;
+}
+
+
+.buttons-form {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.table {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.scroll-table{
+    height:400px;
+    overflow:auto;
+    padding:10px;
+}
+
+
+/*******Tabla de Clientes*******/
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+        /* Ocultar el header de la tabla */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+
+        tr:nth-child(odd) {
+            background: #ffffff;
+        }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+        td:before {
+            position: absolute;
+            top: 0;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+        }
+        
+
+
+.nosotros-container{
+    margin-right:auto;
+    margin-left:auto;
+    justify-content: center;
+}

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sanchez Iglesia abogados</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header class="p-3 text-bg-light">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-end justify-content-lg-start">
+                <ul class="nav col-12 col-lg-6            mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Telefono +56 9 8149 2695</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">Solicita cotización</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
+        <div class="container-nav">
+
+            <a class="logoS" href="/"><img src="~/Content/img/logo/SILogo.png" alt="Logo" width="230" height="100" class="d-inline-block align-text-top"></a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-md-end">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Clientes", "Index", "Clientes", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Nosotros", "Nosotros", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Servicios", "Servicios", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <footer class="d-flex flex-wrap navbar-expand-sm justify-content-between align-items-center justify-content-end py-3 ">
+        <ul class="nav col-md-4 justify-content-center">
+
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contacto</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Nosotros</a></li>
+        </ul>
+        <a href="/" class="col-md-1 d-flex align-items-center justify-content-center mb-2 mb-md-0 me-md-3 link-body-emphasis text-decoration-none">
+            <img src="~/Content/img/logo-empresa/SILogo2.png" alt="Logo" width="300" height="300" class="d-inline-block align-text-top">
+        </a>
+        <p class="col-md-4 mb-3 text-white d-flex justify-content-start">© 2023 Company, Inc</p>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

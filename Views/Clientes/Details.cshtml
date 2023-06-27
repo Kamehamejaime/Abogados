@@ -1,0 +1,55 @@
+﻿@model Abogados.Models.Cliente
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h2>Cliente</h2>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+    </dl>
+</div>
+
+<div class="buttons-form form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <a class="btn btn-outline-secondary" href="/Clientes">Volver</a> | 
+        <a class="btn btn-primary" href="/Clientes/Edit/@Model.Id">Editar</a>
+    </div>
+</div>
+
+

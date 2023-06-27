@@ -1,0 +1,63 @@
+﻿@model Abogados.Models.Cliente
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h1>Eliminar</h1>
+
+<h3>¿Está seguro que desea eliminar este registro?</h3>
+<div>
+    <h2>Cliente</h2>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+
+
+
+<div class="buttons-form form-actions no-color">
+
+    <a class="btn btn-outline-secondary" href="/Clientes">Volver</a>|
+    <input type="submit" value="Eliminar" class="btn btn-danger" />
+</div>
+    }
+</div>
+
+    
